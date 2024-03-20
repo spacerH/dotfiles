@@ -1,0 +1,15 @@
+[[manager.prepend_keymap]]
+on   = [ "<Esc>" ]
+run  = 'shell "$SHELL" --block --confirm'
+desc = "Open shell here"
+
+[[input.prepend_keymap]]
+on   = [ "q" ]
+run  = "close"
+desc = "Cancel input"
+
+[[manager.prepend_keymap]]
+on  = [ "<d>" ]
+run = '''
+	shell 'dragon -x -i -T "$1"' --confirm
+'''
