@@ -22,7 +22,7 @@ sleep 0.3
 ${scriptsDir}/Refresh.sh
 pywalfox update
 pywal-discord default
-spicetify config current_theme pywal
-spicetify config color_scheme pywal
+spicetify config current_theme spicewal
+spicetify config color_scheme spicewal
 spicetify apply
 spotify

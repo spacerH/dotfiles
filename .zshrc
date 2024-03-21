@@ -1,7 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="jonathan"
 
@@ -11,6 +10,11 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
+source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export ZSH="$HOME/.oh-my-zsh"
+export VISUAL="/usr/bin/nvim"
+export EDITOR="$VISUAL"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,6 +47,7 @@ alias im="swayimg"
 alias manga="opencomic ~/manga"
 alias save="rclone sync ~/diary/ Google:"
 alias sync="rclone sync Google: ~/diary/"
+alias yz="yazi"
 
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
