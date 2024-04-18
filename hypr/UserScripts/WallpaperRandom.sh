@@ -25,4 +25,5 @@ pywal-discord default
 spicetify config current_theme spicewal
 spicetify config color_scheme spicewal
 spicetify apply
+pywal-zathura
 spotify

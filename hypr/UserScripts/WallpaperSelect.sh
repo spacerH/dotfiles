@@ -88,6 +88,7 @@ sleep 0.4
 ${SCRIPTSDIR}/Refresh.sh
 pywal-discord default
 pywalfox update
+pywal-zathura
 spicetify config current_theme spicewal
 spicetify config color_scheme spicewal
 spicetify apply

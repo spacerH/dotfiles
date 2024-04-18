@@ -51,6 +51,7 @@ if [ ! -f ~/.config/hypr/.initial_startup_done ]; then
 		"$scriptsDir/Refresh.sh" >/dev/null 2>&1 &
 	fi
 
+	easyeffects -w
 	# Create a marker file to indicate that the script has been executed.
 	touch ~/.config/hypr/.initial_startup_done
 

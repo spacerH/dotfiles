@@ -14,7 +14,6 @@ function Manager:layout(area)
 		})
 		:split(area)
 end
-
 function Manager:render(area)
 	local chunks = self:layout(area)
 
@@ -30,7 +29,11 @@ function Manager:render(area)
 		ui.Bar(chunks[1], ui.Bar.RIGHT),
 		ui.Bar(chunks[3], ui.Bar.LEFT),
 
-		-- Parent
+		bar("┬", chunks[1].right - 1, chunks[1].y),
+		bar("┴", chunks[1].right - 1, chunks[1].bottom - 1),
+		bar("┬", chunks[2].right, chunks[2].y),
+		bar("┴", chunks[2].right, chunks[1].bottom - 1),
+
 		-- Parent
 		Parent:render(chunks[1]:padding(ui.Padding.xy(1))),
 		-- Current
